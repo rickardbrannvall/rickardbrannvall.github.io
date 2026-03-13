@@ -9,8 +9,9 @@
         h1 { color: #333; }
         h3 { color: #555; margin-top: 1.2em; margin-bottom: 0.5em; }
         .section { margin-bottom: 20px; }
-        .header { display: flex; align-items: center; margin-bottom: 0.5em; }
-        .header img { margin-right: 20px; }
+        .biography { display: flex; align-items: flex-start; }
+        .biography-content { flex: 1; }
+        .biography-image { margin-left: 20px; }
         .paper-list { list-style: none; padding-left: 0; }
         .paper-list li { margin-bottom: 0.8em; }
         .paper-id { font-weight: bold; color: #555; }
@@ -21,18 +22,20 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="cartoon.jpg" alt="Rickard Brännvall" width="120">
-        <h1>Rickard Brännvall</h1>
-    </div>
-    <div class="section">
-        <p>Senior researcher in machine learning at RISE Research Institutes of Sweden. Background in physics and finance, previously in quantitative analysis and regulatory capital modeling at Citigroup in Tokyo and London. Current research focus:</p>
-        <ul>
-            <li>Co-design of Transformer neural networks efficient under homomorphic encryption &mdash; a quantum-resilient technology for end-to-end secure data processing</li>
-            <li>AI privacy risk assessment and regulatory compliance (GDPR, EU AI Act)</li>
-            <li>Decentralised secure processing environments for health data</li>
-            <li>Scalable heterogeneous federated learning</li>
-        </ul>
+    <h1>Rickard Brännvall</h1>
+    <div class="section biography">
+        <div class="biography-content">
+            <p>Senior researcher in machine learning at RISE Research Institutes of Sweden. Background in physics and finance, previously in quantitative analysis and regulatory capital modeling at Citigroup in Tokyo and London. Current research focus:</p>
+            <ul>
+                <li>Quantitative methods for AI privacy risk assessment and regulatory compliance <br> (GDPR, EU AI Act)</li>
+                <li>Co-design of Transformer neural networks efficient under homomorphic encryption; <br>a quantum-resilient technology for end-to-end secure data processing</li>
+                <li>Decentralised secure processing environments for health data</li>
+                <li>Scalable heterogeneous federated learning</li>
+            </ul>
+        </div>
+        <div class="biography-image">
+            <img src="cartoon.jpg" alt="Rickard Brännvall" width="200">
+        </div>
     </div>
     <p class="profile-links">
         <a href="https://www.linkedin.com/in/brannvall/" target="_blank">LinkedIn</a>
