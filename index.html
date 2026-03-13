@@ -17,7 +17,7 @@
         .paper-id { font-weight: bold; color: #555; }
         .paper-links { font-size: 0.9em; }
         .paper-links a { margin-right: 8px; }
-        .profile-links { margin-top: 0.5em; margin-bottom: 1em; }
+        .profile-links { margin-top: -0.5em; margin-bottom: 1em; }
         .profile-links a { margin-right: 12px; }
     </style>
 </head>
@@ -26,14 +26,10 @@
     <div class="section biography">
         <div class="biography-content">
             <h2>Biography</h2>
-            <p>Rickard Nakamura Brännvall is a senior researcher in machine learning at RISE Research Institutes of Sweden. With a background in physics and finance, his current research focuses on reliable and efficient AI applications. His work includes:</p>
-            <ul>
-                <li>AI information leakage and regulatory privacy risk assessment</li>
-                <li>Computationally efficient Transformer neural networks</li>
-                <li>Privacy-enhancing technologies for AI applications</li>
-                <li>Scalable heterogeneous federated learning</li>
-            </ul>
-            <p>Rickard is also involved in RISE's efforts in post-quantum cryptography.</p>
+            <p>Rickard Nakamura Brännvall is a senior researcher in machine learning at RISE Research Institutes of Sweden. With a background in physics and finance, his current research focuses on reliable and efficient AI applications.</p>
+            <p>A major thread of his work is the co-design of Transformer neural networks that are efficient under homomorphic encryption (HE), a quantum-resilient cryptographic technology that enables computation on encrypted data without ever exposing the plaintext. This line of research makes end-to-end secure data processing practical for real-world AI workloads.</p>
+            <p>Rickard also works on AI privacy risk assessment through the LeakPro framework, which helps organisations demonstrate that their AI systems provide adequate protection for sensitive data. LeakPro supports the full AI development lifecycle &mdash; from investment decisions to post-deployment auditing &mdash; with a focus on personal data and business-critical information, addressing requirements for Data Protection Impact Assessments (DPIA) and regulatory compliance under the GDPR and the EU AI Act.</p>
+            <p>Another focus area is decentralised secure processing environments for health data. The SARDIN project developed a platform for secondary use of health data in preparation for the European Health Data Space (EHDS) in Sweden. Built on ColonyOS, the platform sends analysis code to edge nodes at regional data holders rather than centralising personal data, returning only aggregated results. Privacy is strengthened through federated analysis, secure aggregation using homomorphic encryption, and differential privacy &mdash; techniques shown to achieve privacy&ndash;utility trade-offs comparable to centralised processing. The underlying cryptographic building blocks use quantum-resilient schemes for long-term data security.</p>
             <p>Prior to his current role, Rickard held positions in quantitative analysis and regulatory capital modeling at Citigroup in Tokyo and London.</p>
         </div>
         <div class="biography-image">
@@ -44,8 +40,22 @@
         <a href="https://www.linkedin.com/in/brannvall/" target="_blank">LinkedIn</a>
         <a href="https://www.ri.se/en/person/rickard-brannvall" target="_blank">RISE</a>
         <a href="https://www.researchgate.net/profile/Rickard-Braennvall/research" target="_blank">ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=ns5dF88AAAAJ" target="_blank">Google Scholar</a>
         <a href="https://orcid.org/0000-0003-4293-6408" target="_blank">ORCID</a>
     </p>
+    <div class="section">
+        <h2>Recent Projects</h2>
+        <p>Rickard has contributed to the funding proposals for and led or participated in the following projects:</p>
+        <ul>
+            <li><strong>LeakPro Phase II</strong> (Vinnova, 2026&ndash;) &mdash; Phase II of the LeakPro project, focusing on generative language models, privacy risk audit, regulatory model validation, and optimisation of privacy-enhancing technologies.</li>
+            <li><strong>LeakPro</strong> (Vinnova) &mdash; Development of the LeakPro framework for AI privacy risk assessment, supporting Data Protection Impact Assessments and regulatory compliance under the GDPR and the EU AI Act.</li>
+            <li><strong>SARDIN</strong> (Vinnova) &mdash; A decentralised sandbox platform for secondary use of health data, built on ColonyOS, in preparation for the European Health Data Space (EHDS) in Sweden. The platform sends analysis code to regional edge nodes rather than centralising personal data.</li>
+            <li><strong>CryptoBuildingBlocks</strong> &mdash; Co-design of neural network architectures efficient under torus-based fully homomorphic encryption (TFHE), in collaboration with Zama.</li>
+            <li><strong>HEIDA</strong> (Vinnova) &mdash; A research project on secure sharing of healthcare data using homomorphic encryption, led by Rickard. Developed software tools and demonstrated privacy-preserving analysis of health data across organisational boundaries.</li>
+            <li><strong>VINTER</strong> (Vinnova Innovation Competition, 2022) &mdash; Rickard served as technical lead for RISE&rsquo;s winning team in Vinnova&rsquo;s innovation competition, where their encryption-based solution for secure computation with health data was selected.</li>
+            <li><strong>NGI Explorer Fellowship</strong> (2021) &mdash; Research fellowship for a collaboration on homomorphic encryption with Binghamton University, New York.</li>
+        </ul>
+    </div>
     <div class="section">
         <h2>Papers & Supplementary Material</h2>
         <p>Full publication list also available on
