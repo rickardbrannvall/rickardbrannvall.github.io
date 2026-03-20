@@ -8,8 +8,10 @@
         body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
         h1 { color: #333; }
         h3 { color: #555; margin-top: 1.2em; margin-bottom: 0.5em; }
-        nav { margin-bottom: 1.5em; }
-        nav a { margin-right: 12px; }
+        .header { display: flex; align-items: baseline; margin-bottom: 0.5em; }
+        .header h1 { margin: 0; }
+        .header nav { margin-left: auto; }
+        nav a { margin-left: 12px; }
         .paper-list { list-style: none; padding-left: 0; }
         .paper-list li { margin-bottom: 0.8em; }
         .paper-id { font-weight: bold; color: #555; }
@@ -18,13 +20,13 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/news/">News &amp; Updates</a>
-        <a href="/papers/">Papers</a>
-    </nav>
-
-    <h1>Papers &amp; Supplementary Material</h1>
+    <div class="header">
+        <h1>Papers &amp; Supplementary Material</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/news/">News &amp; Updates</a>
+        </nav>
+    </div>
     <p>Full publication list also available on
         <a href="https://www.diva-portal.org/smash/resultList.jsf?query=&language=en&searchType=RESEARCH&noOfRows=50&sortOrder=dateDefended_desc&sortOrder2=dateIssued_sort_desc&onlyFullText=false&sf=all&aq=%5B%5B%7B%22freeText%22%3A%220000-0003-4293-6408%22%7D%5D%5D&aqe=%5B%5D&aq2=%5B%5D&af=%5B%5D" target="_blank">DiVA</a>.
     </p>

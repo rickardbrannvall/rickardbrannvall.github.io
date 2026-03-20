@@ -8,8 +8,10 @@
         body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
         h1 { color: #333; }
         h3 { color: #555; margin-top: 1.2em; margin-bottom: 0.5em; }
-        nav { margin-bottom: 1.5em; }
-        nav a { margin-right: 12px; }
+        .header { display: flex; align-items: baseline; margin-bottom: 0.5em; }
+        .header h1 { margin: 0; }
+        .header nav { margin-left: auto; }
+        nav a { margin-left: 12px; }
         .section { margin-bottom: 20px; }
         .biography { display: flex; align-items: flex-start; }
         .biography-content { flex: 1; }
@@ -22,13 +24,13 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/news/">News &amp; Updates</a>
-        <a href="/papers/">Papers</a>
-    </nav>
-
-    <h1>Rickard Brännvall</h1>
+    <div class="header">
+        <h1>Rickard Brännvall</h1>
+        <nav>
+            <a href="/news/">News &amp; Updates</a>
+            <a href="/papers/">Papers</a>
+        </nav>
+    </div>
     <div class="section biography">
         <div class="biography-content">
             <p>Senior researcher in machine learning at RISE Research Institutes of Sweden. Background in physics and finance, previously in quantitative analysis and regulatory capital modeling at Citigroup in Tokyo and London. Current research focus:</p>
@@ -51,6 +53,7 @@
         <a href="https://www.researchgate.net/profile/Rickard-Braennvall/research" target="_blank">ResearchGate</a>
         <a href="https://scholar.google.com/citations?user=ns5dF88AAAAJ" target="_blank">Google Scholar</a>
         <a href="https://orcid.org/0000-0003-4293-6408" target="_blank">ORCID</a>
+        <a href="https://www.diva-portal.org/smash/resultList.jsf?query=&language=en&searchType=RESEARCH&noOfRows=50&sortOrder=dateDefended_desc&sortOrder2=dateIssued_sort_desc&onlyFullText=false&sf=all&aq=%5B%5B%7B%22freeText%22%3A%220000-0003-4293-6408%22%7D%5D%5D&aqe=%5B%5D&aq2=%5B%5D&af=%5B%5D" target="_blank">DiVA</a>
     </p>
 
     <div class="section">
@@ -64,8 +67,8 @@
             <p class="news-title">New preprint: Client-Conditional Federated Learning</p>
         </div>
         <div class="news-item">
-            <p class="news-date">December 2025</p>
-            <p class="news-title">Submitted: Inhibitor Transformers and Gated RNNs for FHE</p>
+            <p class="news-date">November 2025</p>
+            <p class="news-title">LeakPro Phase II granted</p>
         </div>
         <p><a href="/news/">All news &amp; updates &rarr;</a></p>
     </div>

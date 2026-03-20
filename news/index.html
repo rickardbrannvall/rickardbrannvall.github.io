@@ -7,8 +7,10 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
         h1 { color: #333; }
-        nav { margin-bottom: 1.5em; }
-        nav a { margin-right: 12px; }
+        .header { display: flex; align-items: baseline; margin-bottom: 0.5em; }
+        .header h1 { margin: 0; }
+        .header nav { margin-left: auto; }
+        nav a { margin-left: 12px; }
         .news-item { margin-bottom: 2em; }
         .news-date { font-size: 0.9em; color: #777; margin-bottom: 0.3em; }
         .news-title { font-weight: bold; margin-bottom: 0.3em; }
@@ -16,61 +18,69 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/news/">News &amp; Updates</a>
-        <a href="/papers/">Papers</a>
-    </nav>
-
-    <h1>News &amp; Updates</h1>
+    <div class="header">
+        <h1>News &amp; Updates</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/papers/">Papers</a>
+        </nav>
+    </div>
 
     <div class="news-item">
         <p class="news-date">March 2026</p>
         <p class="news-title">New preprint: Exponential-Family Membership Inference</p>
-        <p class="news-body">[Placeholder for details about the BaVarIA paper.]
-            <a href="https://arxiv.org/abs/2603.11799" target="_blank">arXiv</a>
+        <p class="news-body">New paper on arXiv! Membership inference attacks (MIAs) are becoming standard tools for auditing AI privacy. This paper shows that three prominent methods &mdash; LiRA, RMIA, and BASE &mdash; are unified within an exponential-family framework, and introduces BaVarIA: a Bayesian approach using conjugate priors that improves performance across shadow-model budgets without extra hyperparameter tuning.
+            <br><a href="https://arxiv.org/abs/2603.11799" target="_blank">arXiv</a>
         </p>
     </div>
 
     <div class="news-item">
         <p class="news-date">February 2026</p>
         <p class="news-title">New preprint: Client-Conditional Federated Learning</p>
-        <p class="news-body">[Placeholder for details about the CondFL paper.]
-            <a href="https://arxiv.org/abs/2603.11307" target="_blank">arXiv</a>
+        <p class="news-body">New paper on arXiv! Federated learning struggles with data heterogeneity: existing methods either ignore client differences, require costly cluster discovery, or maintain per-client models. This paper proposes conditioning a shared global model on locally computed data statistics, handling diverse client distributions without extra communication cost.
+            <br><a href="https://arxiv.org/abs/2603.11307" target="_blank">arXiv</a>
         </p>
     </div>
 
     <div class="news-item">
         <p class="news-date">December 2025</p>
-        <p class="news-title">Submitted: Inhibitor Transformers and Gated RNNs for FHE</p>
-        <p class="news-body">[Placeholder for details about the IEEE CIM submission.]</p>
+        <p class="news-title">New preprint: Inhibitor Transformers and Gated RNNs for FHE</p>
+        <p class="news-body"> This paper presents neural network architectures co-designed for fully homomorphic encryption (FHE) &mdash; replacing softmax attention and smooth activations with ReLU and addition-based alternatives that are natively efficient on encrypted data, enabling end-to-end secure inference without sacrificing accuracy.</p>
     </div>
 
     <div class="news-item">
         <p class="news-date">November 2025</p>
         <p class="news-title">LeakPro Phase II granted</p>
-        <p class="news-body">[Placeholder for details about the Vinnova grant for LeakPro Phase II.]</p>
+        <p class="news-body">Vinnova has granted funding for LeakPro Phase II, expanding the open-source <a href="https://github.com/aidotse/LeakPro" target="_blank">LeakPro</a> framework from a privacy risk assessment tool into a practical framework for responsible AI. Phase II targets generative language models, privacy risk audit for regulatory compliance, and optimisation of privacy-enhancing technologies &mdash; helping organisations find the right balance between privacy and utility.
+            <br><a href="https://www.ai.se/en/news/leakpro-2-expands-successful-ai-privacy-assessment-tool" target="_blank">AI Sweden announcement</a>
+            <a href="https://www.vinnova.se/en/p/leakpro-ii-operational-privacy-risk-management-for-ai-systems/" target="_blank" style="margin-left: 8px;">Vinnova project page</a>
+        </p>
     </div>
 
     <div class="news-item">
         <p class="news-date">October 2025</p>
         <p class="news-title">LeakPro Phase I completed</p>
-        <p class="news-body">[Placeholder for details about the completion of LeakPro Phase I.]</p>
+        <p class="news-body">The first phase of the <a href="https://github.com/aidotse/LeakPro" target="_blank">LeakPro</a> project has been completed. The project delivered mature implementations of membership inference and data reconstruction attacks against classifiers, inference attacks against synthetic data, and gradient inversion for federated learning. During the project, several regulatory developments reinforced the relevance of this work, including the EDPB opinion on traceability of training data in AI systems and a Swedish Data Protection Authority sandbox study on sensitive personal data.
+            <br><a href="https://github.com/aidotse/LeakPro" target="_blank">LeakPro on GitHub</a>
+            <a href="https://www.ri.se/sv/cybersakerhet/tjanster/kompetens-och-plattformsstod-for-systematisk-testning-av-ai-systems-risk-for" target="_blank" style="margin-left: 8px;">RISE</a>
+        </p>
     </div>
 
     <div class="news-item">
         <p class="news-date">October 2025</p>
         <p class="news-title">SARDIN project completed</p>
-        <p class="news-body">[Placeholder for details about the completion of SARDIN.]</p>
+        <p class="news-body">The SARDIN project (2023&ndash;2025), funded by Vinnova, has been completed. The project developed a decentralised platform that sends analysis code to distributed health data sources and returns only aggregated results, rather than centralising personal data. Combining federated analysis, secure aggregation via homomorphic encryption, and differential privacy, the platform includes governance mechanisms for data access approval and individual consent management. Regulatory and organisational questions were explored together with stakeholders through a series of workshops using a gamified methodology. The project demonstrates that decentralised processing is both technically feasible and legally relevant for implementing the European Health Data Space (EHDS) in Sweden.
+            <br><a href="https://arxiv.org/abs/2501.14556" target="_blank">arXiv</a>
+        </p>
     </div>
 
     <div class="news-item">
         <p class="news-date">May 2025</p>
         <p class="news-title">Visit to Singapore &mdash; ICLR 2025 workshops</p>
-        <p class="news-body">[Placeholder for details about the Singapore visit and ICLR workshop presentations.]
+        <p class="news-body">Presenting two papers at ICLR 2025 workshops in Singapore: InhibiDistilbert on knowledge distillation for FHE-friendly Transformers at the SLLM workshop, and a method for scalable heterogeneous federated learning by conditioning on local data statistics at the MCDC workshop.
             <br>
-            <a href="https://arxiv.org/abs/2503.15983" target="_blank">InhibiDistilbert (SLLM workshop)</a>
-            <a href="https://arxiv.org/abs/2503.00378" target="_blank" style="margin-left: 8px;">CondFL (MCDC workshop)</a>
+            <a href="https://arxiv.org/abs/2503.15983" target="_blank">InhibiDistilbert (SLLM)</a>
+            <a href="https://arxiv.org/abs/2503.00378" target="_blank" style="margin-left: 8px;">CondFL (MCDC)</a>
         </p>
     </div>
 </body>
