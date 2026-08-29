@@ -11,6 +11,7 @@ Personal academic website for Rickard Brännvall, hosted on GitHub Pages at `ric
 - `papers/index.html` — Full publication list with supplementary material links
 - `cartoon.jpg` — Profile image
 - `poster/` — Conference posters (PDF/PNG)
+- `karate/index.html` — Shotokan kyu grading syllabus (transcribed wall charts, Swedish technique names)
 
 ## Conventions
 
