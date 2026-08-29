@@ -9,12 +9,19 @@
         h1 { color: #333; }
         h2 { color: #333; margin-top: 1.6em; }
         h3 { color: #555; margin-top: 1.2em; margin-bottom: 0.5em; }
-        .header { display: flex; align-items: baseline; margin-bottom: 0.5em; }
+        .header { display: flex; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.5em; }
         .header h1 { margin: 0; }
         .header nav { margin-left: auto; }
         nav a { margin-left: 12px; }
         .lead { color: #444; max-width: 62em; }
         .note { font-size: 0.9em; color: #666; max-width: 62em; }
+        .grades { margin: 1.4em 0 1.8em; padding: 0; list-style: none;
+                  display: flex; flex-wrap: wrap; gap: 8px; }
+        .grades a { display: block; padding: 7px 12px; border-radius: 4px;
+                    text-decoration: none; font-weight: bold; font-size: 0.9em; }
+        .grades a small { display: block; font-weight: normal; font-size: 0.85em;
+                          opacity: 0.9; }
+
         .scroll { overflow-x: auto; margin: 1em 0 0.5em; }
         table.grid { border-collapse: collapse; font-size: 0.78em; min-width: 1100px; }
         table.grid th, table.grid td {
@@ -25,23 +32,17 @@
             width: 2em; font-size: 0.9em;
         }
         table.grid th.belt { text-align: center; line-height: 1.35; padding: 6px 4px; }
+        table.grid th.belt a { color: inherit; text-decoration: none; }
+        table.grid th.belt a:hover { text-decoration: underline; }
         table.grid th.belt small { font-weight: normal; display: block; font-size: 0.9em; }
         table.grid tr.notes td { background: #f4f4f4; font-size: 0.95em; }
         table.grid td.combo { font-weight: bold; background: #fbfbf3; }
         table.grid td.kata { text-align: center; font-weight: bold; }
         table.grid td.kata small { display: block; font-weight: normal; color: #555; }
-        .belts { margin-top: 2.5em; }
-        .belt-card { border-left: 6px solid #ccc; padding: 0.2em 0 0.2em 14px; margin: 1.6em 0; }
-        .belt-card h3 { margin-top: 0; }
-        .belt-card ol { margin: 0.3em 0 0.6em; padding-left: 1.4em; }
-        .belt-card li { margin-bottom: 0.15em; }
-        .belt-card .boxed { font-weight: bold; margin: 0.4em 0; }
-        .belt-card .kv { margin: 0.3em 0; }
-        .belt-card .kv span { color: #666; }
         @media print {
             @page { size: A4 landscape; margin: 10mm; }
             body { margin: 0; max-width: none; font-size: 9pt; }
-            .header nav, .belts, .noprint { display: none; }
+            .header nav, .grades, .noprint { display: none; }
             .scroll { overflow: visible; }
             table.grid { min-width: 0; width: 100%; font-size: 6.5pt; page-break-inside: auto; }
             h2 { page-break-before: always; }
@@ -65,7 +66,20 @@
     kyu grades from 9 kyu (red belt) to 1 kyu (brown belt). The technique names are kept in
     the original Swedish.</p>
 
-    <p class="note"><strong>Reading the charts.</strong>
+    <p class="lead noprint">One page per grade, for reading on a phone:</p>
+    <ul class="grades">
+    <li><a href="9kyu.html" style="background:#E04E2A;color:#000000">9 KYU<small>Rött bälte</small></a></li>
+    <li><a href="8kyu.html" style="background:#F08A2E;color:#000000">8 KYU<small>Orange bälte</small></a></li>
+    <li><a href="7kyu.html" style="background:#FFE800;color:#000000">7 KYU<small>Gult bälte</small></a></li>
+    <li><a href="6kyu.html" style="background:#1E8A5A;color:#FFFFFF">6 KYU<small>Grönt bälte</small></a></li>
+    <li><a href="5kyu.html" style="background:#1B6EC2;color:#FFFFFF">5 KYU<small>Blått bälte</small></a></li>
+    <li><a href="4kyu.html" style="background:#1B6EC2;color:#FFFFFF">4 KYU<small>Blått bälte</small></a></li>
+    <li><a href="3kyu.html" style="background:#8B4A2B;color:#FFFFFF">3 KYU<small>Brunt bälte</small></a></li>
+    <li><a href="2kyu.html" style="background:#8B4A2B;color:#FFFFFF">2 KYU<small>Brunt bälte</small></a></li>
+    <li><a href="1kyu.html" style="background:#8B4A2B;color:#FFFFFF">1 KYU<small>Brunt bälte</small></a></li>
+    </ul>
+
+    <p class="note"><strong>Reading the syllabus.</strong>
     <strong>F</strong> = <em>fram&aring;t</em> (forward), <strong>(B)</strong> =
     <em>bak&aring;t</em> (backward); at 9 and 8 kyu every movement goes forward.
     <em>Keri Kamai</em> is the kicking guard position. <code>3 x 2</code> / <code>2 x 2</code>
@@ -81,7 +95,7 @@
     <div class="scroll">
 <table class="grid">
 <thead>
-<tr><th class="rownum"></th><th class="belt" style="background:#E04E2A;color:#000000">9 KYU<small>( Rött bälte )</small></th><th class="belt" style="background:#F08A2E;color:#000000">8 KYU<small>( Orange bälte )</small></th><th class="belt" style="background:#FFE800;color:#000000">7 KYU<small>( Gult bälte )</small></th><th class="belt" style="background:#1E8A5A;color:#FFFFFF">6 KYU<small>( Grönt bälte )</small></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF">5 KYU<small>( Blått bälte )</small></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF">4 KYU<small>( Blått bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">3 KYU<small>( Brunt bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">2 KYU<small>( Brunt bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">1 KYU<small>( Brunt bälte )</small></th></tr>
+<tr><th class="rownum"></th><th class="belt" style="background:#E04E2A;color:#000000"><a href="9kyu.html">9 KYU<small>( Rött bälte )</small></a></th><th class="belt" style="background:#F08A2E;color:#000000"><a href="8kyu.html">8 KYU<small>( Orange bälte )</small></a></th><th class="belt" style="background:#FFE800;color:#000000"><a href="7kyu.html">7 KYU<small>( Gult bälte )</small></a></th><th class="belt" style="background:#1E8A5A;color:#FFFFFF"><a href="6kyu.html">6 KYU<small>( Grönt bälte )</small></a></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF"><a href="5kyu.html">5 KYU<small>( Blått bälte )</small></a></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF"><a href="4kyu.html">4 KYU<small>( Blått bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="3kyu.html">3 KYU<small>( Brunt bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="2kyu.html">2 KYU<small>( Brunt bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="1kyu.html">1 KYU<small>( Brunt bälte )</small></a></th></tr>
 </thead>
 <tbody>
 <tr class="notes"><td class="rownum"></td><td>( Alla rörelser framåt )</td><td>( Alla rörelser framåt )</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td><td>F: framåt   B: bakåt</td></tr>
@@ -112,7 +126,7 @@
     <div class="scroll">
 <table class="grid">
 <thead>
-<tr><th class="rownum"></th><th class="belt" style="background:#E04E2A;color:#000000">9 KYU<small>( Rött bälte )</small></th><th class="belt" style="background:#F08A2E;color:#000000">8 KYU<small>( Orange bälte )</small></th><th class="belt" style="background:#FFE800;color:#000000">7 KYU<small>( Gult bälte )</small></th><th class="belt" style="background:#1E8A5A;color:#FFFFFF">6 KYU<small>( Grönt bälte )</small></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF">5 KYU<small>( Blått bälte )</small></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF">4 KYU<small>( Blått bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">3 KYU<small>( Brunt bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">2 KYU<small>( Brunt bälte )</small></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF">1 KYU<small>( Brunt bälte )</small></th></tr>
+<tr><th class="rownum"></th><th class="belt" style="background:#E04E2A;color:#000000"><a href="9kyu.html">9 KYU<small>( Rött bälte )</small></a></th><th class="belt" style="background:#F08A2E;color:#000000"><a href="8kyu.html">8 KYU<small>( Orange bälte )</small></a></th><th class="belt" style="background:#FFE800;color:#000000"><a href="7kyu.html">7 KYU<small>( Gult bälte )</small></a></th><th class="belt" style="background:#1E8A5A;color:#FFFFFF"><a href="6kyu.html">6 KYU<small>( Grönt bälte )</small></a></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF"><a href="5kyu.html">5 KYU<small>( Blått bälte )</small></a></th><th class="belt" style="background:#1B6EC2;color:#FFFFFF"><a href="4kyu.html">4 KYU<small>( Blått bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="3kyu.html">3 KYU<small>( Brunt bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="2kyu.html">2 KYU<small>( Brunt bälte )</small></a></th><th class="belt" style="background:#8B4A2B;color:#FFFFFF"><a href="1kyu.html">1 KYU<small>( Brunt bälte )</small></a></th></tr>
 </thead>
 <tbody>
 <tr class="notes"><td class="rownum"></td><td>Gohon Kumite.</td><td>Gohon Kumite.<br>( med Gyaku-zuki )</td><td>Gohon Kumite.<br>( med Mae-geri och Mae-ashi-geri och Gyaku-zuki )</td><td>Ippon Kumite</td><td>Ippon Kumite</td><td>Ippon Kumite</td><td>Ippon Kumite</td><td>Ju-ippon kumite</td><td>Ju-ippon kumite<br>( samma som 2 kyu.)<br>(med tillbaka dragande)</td></tr>
@@ -126,251 +140,5 @@
 </tbody>
 </table>
     </div>
-
-<div class="belts">
-<h2>By belt</h2>
-<p class="note">The same syllabus laid out one grade at a time &mdash; easier to read on a phone.</p>
-<div class="belt-card" style="border-left-color:#E04E2A">
-<h3>9 KYU &mdash; Rött bälte</h3>
-<p class="kv"><span>( Alla rörelser framåt )</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Kiba-dachi och Choku-zuki</li>
-<li>Gyaku-zuki  (Höger hand fram)</li>
-<li>Oi-zuki</li>
-<li>Gedan-barai</li>
-<li>Age-uke</li>
-<li>Soto-uke</li>
-<li>Uchi-uke</li>
-<li>Kokutsu-dachi och Shuto-uke</li>
-<li>Mae-geri  (Keri Kamai)</li>
-<li>Mae-geri och Gyaku-zuki  (Höger hand fram)</li>
-<li>Mawashi-geri  (Keri Kamai)</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="kv"><strong>Kumite</strong> &mdash; Gohon Kumite.</p>
-<p class="kv"><strong>Kata</strong> &mdash; Taikyoku Shodan <span>8 - 16,   20.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#F08A2E">
-<h3>8 KYU &mdash; Orange bälte</h3>
-<p class="kv"><span>( Alla rörelser framåt )</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Kiba-dachi och Sanren-zuki</li>
-<li>Gyaku-zuki  (Höger hand fram)</li>
-<li>Oi-zuki</li>
-<li>Gedan-barai och Gyaku-zuki</li>
-<li>Age-uke och Gyaku-zuki</li>
-<li>Soto-uke och Gyaku-zuki</li>
-<li>Uchi-uke och Gyaku-zuki</li>
-<li>Kokutsu-dachi och Shuto-uke</li>
-<li>Mae-geri  (Keri Kamai)</li>
-<li>Mae-geri och Oi-zuki</li>
-<li>Mawashi-geri  (Keri Kamai)</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="kv"><strong>Kumite</strong> &mdash; Gohon Kumite. <span>( med Gyaku-zuki )</span></p>
-<p class="kv"><strong>Kata</strong> &mdash; Heian Shodan <span>9 - 17,   21.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#FFE800">
-<h3>7 KYU &mdash; Gult bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Shiko-dachi och Sanren-zuki</li>
-<li>Gyaku-zuki  (Höger hand fram)</li>
-<li>Oi-zuki</li>
-<li>(B) Gedan-barai och Gyaku-zuki</li>
-<li>Age-uke och Gyaku-zuki</li>
-<li>(B) Soto-uke och Gyaku-zuki</li>
-<li>Uchi-uke och Gyaku-zuki</li>
-<li>Age-uke och Gyaku-zuki samt Gedan-barai</li>
-<li>Kokutsu-dachi och Shuto-uke</li>
-<li>(B) Kokutsu-dachi och Shuto-uke</li>
-<li>Mae-geri  (Keri Kamai)</li>
-<li>Mae-geri och Gyaku-zuki  (Höger hand fram)</li>
-<li>(B) Mae-ashi-geri och Oi-zuki</li>
-<li>Mawashi-geri  (Keri Kamai)</li>
-<li>Mawashi-geri och Gyaku-zuki  (Höger hand fram)</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="kv"><strong>Kumite</strong> &mdash; Gohon Kumite. <span>( med Mae-geri och Mae-ashi-geri och Gyaku-zuki )</span></p>
-<p class="kv"><strong>Kata</strong> &mdash; Heian Nidan <span>11 - 26,   26.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#1E8A5A">
-<h3>6 KYU &mdash; Grönt bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki</li>
-<li>Sanren-zuki</li>
-<li>(B) Gedan-barai och Gyaku-zuki</li>
-<li>Soto-uke och Kiba-dachi samt Yoko-empi</li>
-<li>(B) Uchi-uke och Gyaku-zuki</li>
-<li>Age-uke och Gyaku-zuki samt Gedan-barai</li>
-<li>Kokutsu-dachi och Shuto-uke, därefter Zenkutsu-dachi och Gyaku-zuki</li>
-<li>Mae-geri</li>
-<li>Mae-geri, Oi-zuki och Gyaku-zuki</li>
-<li>Mae-geri-chudan och Mae-geri-jodan   3 x 2  (höger och vänster)</li>
-<li>Mawashi-geri och Gyaku-zuki</li>
-<li>Mae-geri-chudan och Mawashi-geri-chudan   3 x 2</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="kv"><strong>Kumite</strong> &mdash; Ippon Kumite</p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Heian Sandan <span>10 - 20,   20.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#1B6EC2">
-<h3>5 KYU &mdash; Blått bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki</li>
-<li>Sanren-zuki</li>
-<li>Gyaku-zuki, Gedan-barai och Gyaku-zuki</li>
-<li>(B) Age-uke och Gyaku-zuki samt Gedan-barai</li>
-<li>Soto-uke och Kiba-dachi samt Yoko-empi</li>
-<li>Uchi-uke, Kizami-zuki och Gyaku-zuki</li>
-<li>Kokutsu-dachi och Shuto-uke, därefter Zenkutsu-dachi och Gyaku-zuki</li>
-<li>(B) Kokutsu-dachi och Shuto-uke, därefter Zenkutsu-dachi och Gyaku-zuki</li>
-<li>Mae-geri  (Keri Kamai)</li>
-<li>Mae-geri, Oi-zuki, Gyaku-zuki och Gedan-barai</li>
-<li>Mae-geri-chudan och Mae-geri-jodan   3 x 2</li>
-<li>Mawashi-geri och Gyaku-zuki</li>
-<li>Mae-ashi-geri, Mawashi-geri och Gyaku-zuki</li>
-<li>Mae-geri-jodan och Mawashi-geri-jodan   3 x 2</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="boxed">Mae-geri (f) och Yoko-keage (åt sidan) = samma ben.</p>
-<p class="kv"><strong>Kumite</strong> &mdash; Ippon Kumite</p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Heian Yondan <span>13 - 25,   27.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#1B6EC2">
-<h3>4 KYU &mdash; Blått bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki</li>
-<li>Sanren-zuki</li>
-<li>Gyaku-zuki, Gedan-barai och Gyaku-zuki</li>
-<li>Kizami-zuki, Oi-zuki och Gyaku-zuki</li>
-<li>Age-uke och Gyaku-zuki, därefter Gedan-barai och Gyaku-zuki</li>
-<li>Soto-uke och Kiba-dachi samt Yoko-empi och Uraken</li>
-<li>Uchi-uke, Kizami-zuki och Gyaku-zuki</li>
-<li>Kokutsu-dachi, Shuto-uke och Mae-ashi-geri, Nukite</li>
-<li>(B) Kokutsu-dachi, Shuto-uke, därefter Zenkutsu-dachi och Gyaku-zuki</li>
-<li>Mae-ashi-geri och Mae-geri   3 x 2</li>
-<li>Mae-geri, Oi-zuki, Gyaku-zuki och Gedan-barai</li>
-<li>Mae-geri-chudan, Mae-geri-jodan och Gyaku-zuki jodan  (Kiai)   3 x 2</li>
-<li>Mawashi-geri, Gyaku-zuki och Oi-zuki</li>
-<li>Mae-geri-jodan, Mawashi-geri-jodan och Gyaku-zuki   3 x 2</li>
-<li>Yoko-keage  (Kiba-dachi – Keri Kamai)</li>
-<li>Yoko-kekomi</li>
-</ol>
-<p class="boxed">Mae-geri (f) och Yoko-kekomi (åt sidan) = samma ben.</p>
-<p class="kv"><strong>Kumite</strong> &mdash; Ippon Kumite</p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-<li>Yoko-kekomi</li>
-<li>Mawashi-geri</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Heian Godan <span>12 - 19,   23.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#8B4A2B">
-<h3>3 KYU &mdash; Brunt bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki</li>
-<li>Sanren-zuki</li>
-<li>Kizami-zuki, Oi-zuki och Gyaku-zuki</li>
-<li>(B) Age-uke och Gyaku-zuki, därefter Gedan-barai och Gyaku-zuki</li>
-<li>Soto-uke, Kiba-dachi och Yoko-empi och Uraken</li>
-<li>Uchi-uke och Kizami-zuki och Gyaku-zuki</li>
-<li>Age-uke, Tate-empi, Shuto-uke och Gyaku-zuki, Mae-geri och Gyaku-zuki   2 x 2</li>
-<li>Shuto-uke och Mae-ashi-geri och Nukite</li>
-<li>(B) Shuto-uke och Mae-ashi-geri och Nukite</li>
-<li>Mae-ashi-geri, Mae-geri och Oi-zuki, Gyaku-zuki</li>
-<li>Mae-geri-chudan, Mae-geri-jodan och Gyaku-zuki jodan  (Kiai)   3 x 2</li>
-<li>Mawashi-geri, Uraken och Gyaku-zuki</li>
-<li>Mae-geri-jodan, Mawashi-geri-jodan och Gyaku-zuki   3 x 2</li>
-<li>Mae-ashi-geri, Mawashi-geri och Gyaku-zuki</li>
-</ol>
-<p class="boxed">Mae-geri (f) och Yoko-keage och Yoko-kekomi (åt sidan) = samma ben.</p>
-<p class="boxed">(Kime och kontroll)  Slå på penna.  Knä + Höft</p>
-<p class="kv"><strong>Kumite</strong> &mdash; Ippon Kumite</p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-<li>Yoko-kekomi</li>
-<li>Mawashi-geri</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Tekki Shodan <span>15 - 29,   29.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#8B4A2B">
-<h3>2 KYU &mdash; Brunt bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki</li>
-<li>Sanren-zuki</li>
-<li>Kizami-zuki, Oi-zuki och Gyaku-zuki</li>
-<li>Ett litet steg bakåt Gedan-barai, därefter Mae-geri, Oi-zuki och Gyaku-zuki</li>
-<li>Soto-uke, Yoko-empi, Uraken och Gyaku-zuki</li>
-<li>Uchi-uke, Haito, vänd Kiba-dachi och Tettsui, därefter Gyaku-zuki  (2 ggr.)   2 x 2</li>
-<li>Age-uke, Tate-empi, Shuto-uke, därefter Mae-ashi-geri och Gyaku-zuki, därefter Mawashi-geri och Gyaku-zuki  (2 ggr.)</li>
-<li>Mae-geri, Mawashi-geri (samma ben) och Gyaku-zuki</li>
-<li>Mae-geri, Yoko-kekomi (samma ben) och Gyaku-zuki</li>
-<li>Ushiro-geri</li>
-<li>Mae-ashi-geri, Mae-geri, Mawashi-geri, Ushiro-geri och Yoko-kekomi   2 x 2</li>
-</ol>
-<p class="boxed">Mae-geri, Yoko-kekomi och Ushiro-geri med samma ben.</p>
-<p class="kv"><strong>Kumite</strong> &mdash; Ju-ippon kumite</p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-<li>Mawashi-geri</li>
-<li>Yoko-kekomi</li>
-<li>Ushiro-geri</li>
-<li>Uchi-mawashi-geri</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Bassai Dai <span>19 - 42,   42.</span></p>
-</div>
-<div class="belt-card" style="border-left-color:#8B4A2B">
-<h3>1 KYU &mdash; Brunt bälte</h3>
-<p class="kv"><span>F: framåt   B: bakåt</span></p>
-<p class="kv"><strong>Kihon</strong></p><ol>
-<li>Oi-zuki och Gyaku-zuki</li>
-<li>Kizami-zuki och Sanren-zuki</li>
-<li>Ett litet steg bakåt Gedan-barai, därefter Mae-ashi-geri, Mae-geri, Oi-zuki och Gyaku-zuki</li>
-<li>Soto-uke och Yoko-empi, Uraken och Gyaku-zuki</li>
-<li>Uchi-uke, Haito, vänd Kiba-dachi och Tettsui, därefter Yoko-kekomi och Gyaku-zuki  (2 ggr.)   2 x 2</li>
-<li>Age-uke och Tate-empi, därefter Shuto-uke, Mae-ashi-geri och Nukite, därefter Mawashi-geri och Gyaku-zuki  (2 ggr.)   2 x 2</li>
-<li>Ett steg bakåt Age-uke, därefter Mawashi-geri, Uraken och Oi-zuki</li>
-<li>Mae-geri, Mawashi-geri (samma ben) och Gyaku-zuki</li>
-<li>Mae-geri, Yoko-kekomi (samma ben) och Gyaku-zuki</li>
-<li>Ushiro-geri och Gyaku-zuki</li>
-<li>Uchi-mawashi-geri och Gyaku-zuki</li>
-<li>Mae-ashi-geri, Mae-geri, Mawashi-geri, Ushiro-geri och Yoko-kekomi   2 x 2</li>
-</ol>
-<p class="boxed">Mae-geri, Yoko-kekomi och Ushiro-geri med samma ben.</p>
-<p class="kv"><strong>Kumite</strong> &mdash; Ju-ippon kumite <span>( samma som 2 kyu.) (med tillbaka dragande)</span></p>
-<ol>
-<li>Oi-zuki  (jodan / chudan)</li>
-<li>Mae-geri</li>
-<li>Mawashi-geri</li>
-<li>Yoko-kekomi</li>
-<li>Ushiro-geri</li>
-<li>Uchi-mawashi-geri</li>
-</ol>
-<p class="kv"><strong>Kata</strong> &mdash; Kanku-dai <span>15 - 65,   65.</span></p>
-</div>
-</div>
 </body>
 </html>
