@@ -17,10 +17,9 @@
         .intro { display: flex; align-items: flex-start; gap: 24px; }
         .intro-content { flex: 1 1 24em; min-width: 0; }
         .intro-qr { flex: 0 0 auto; margin-left: auto; }
-        .intro-qr img { display: block; width: 260px; max-width: 100%; height: auto;
-                        image-rendering: pixelated; }
+        .intro-qr img { display: block; width: 156px; max-width: 100%; height: auto; }
         .note { font-size: 0.9em; color: #666; max-width: 62em; }
-        .grades { margin: 1.2em 0 0.6em; padding: 0; list-style: none;
+        .grades { margin: 1.2em 0 1.8em; padding: 0; list-style: none;
                   display: flex; flex-wrap: wrap; gap: 8px; }
         .grades a { display: block; padding: 7px 12px; border-radius: 4px;
                     text-decoration: none; font-weight: bold; font-size: 0.9em; }
@@ -47,7 +46,9 @@
         @media (max-width: 700px) {
             body { margin: 14px; }
             .intro { flex-direction: column-reverse; align-items: center; gap: 14px; }
+            .intro-content { flex: 0 0 auto; width: 100%; }
             .intro-qr { margin-left: 0; }
+            .intro-qr img { width: 195px; }
         }
         @media print {
             @page { size: A4 landscape; margin: 10mm; }
@@ -77,8 +78,15 @@
             (kumite and kata) by Nils K&aring;gstr&ouml;m, dated 2011-06-01 &mdash; covering all nine
             kyu grades from 9 kyu (red belt) to 1 kyu (brown belt). The technique names are kept in
             the original Swedish.</p>
-            <p class="lead noprint">One page per grade, for reading on a phone:</p>
-            <ul class="grades">
+        </div>
+        <div class="intro-qr noprint">
+            <img src="karate-qr-animated.gif" width="390" height="390"
+                 alt="Animated pixel-art QR code linking to this page">
+        </div>
+    </div>
+
+    <p class="lead noprint">One page per grade, for reading on a phone:</p>
+    <ul class="grades">
     <li><a href="9kyu.html" style="background:#E04E2A;color:#000000">9 KYU<small>Rött bälte</small></a></li>
     <li><a href="8kyu.html" style="background:#F08A2E;color:#000000">8 KYU<small>Orange bälte</small></a></li>
     <li><a href="7kyu.html" style="background:#FFE800;color:#000000">7 KYU<small>Gult bälte</small></a></li>
@@ -88,13 +96,7 @@
     <li><a href="3kyu.html" style="background:#8B4A2B;color:#FFFFFF">3 KYU<small>Brunt bälte</small></a></li>
     <li><a href="2kyu.html" style="background:#8B4A2B;color:#FFFFFF">2 KYU<small>Brunt bälte</small></a></li>
     <li><a href="1kyu.html" style="background:#8B4A2B;color:#FFFFFF">1 KYU<small>Brunt bälte</small></a></li>
-            </ul>
-        </div>
-        <div class="intro-qr noprint">
-            <img src="karate-qr-animated.gif" width="520" height="520"
-                 alt="Animated pixel-art QR code linking to this page">
-        </div>
-    </div>
+    </ul>
 
     <p class="note"><strong>Reading the syllabus.</strong>
     <strong>F</strong> = <em>fram&aring;t</em> (forward), <strong>(B)</strong> =
